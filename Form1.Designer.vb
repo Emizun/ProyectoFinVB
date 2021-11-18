@@ -22,88 +22,141 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btIngresar = New System.Windows.Forms.Button()
         Me.btRegistrarse = New System.Windows.Forms.Button()
-        Me.lbRegistrar = New System.Windows.Forms.Label()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.lbUsuario = New System.Windows.Forms.Label()
-        Me.lbContraseña = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btIngresar
         '
-        Me.btIngresar.Location = New System.Drawing.Point(623, 409)
-        Me.btIngresar.Margin = New System.Windows.Forms.Padding(6)
+        Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btIngresar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 21.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btIngresar.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btIngresar.Location = New System.Drawing.Point(534, 93)
         Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(169, 44)
+        Me.btIngresar.Size = New System.Drawing.Size(225, 72)
         Me.btIngresar.TabIndex = 2
         Me.btIngresar.Text = "Ingresar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.btIngresar.UseVisualStyleBackColor = True
         '
         'btRegistrarse
         '
-        Me.btRegistrarse.Location = New System.Drawing.Point(623, 563)
+        Me.btRegistrarse.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btRegistrarse.Location = New System.Drawing.Point(259, 330)
+        Me.btRegistrarse.Margin = New System.Windows.Forms.Padding(2)
         Me.btRegistrarse.Name = "btRegistrarse"
-        Me.btRegistrarse.Size = New System.Drawing.Size(169, 43)
+        Me.btRegistrarse.Size = New System.Drawing.Size(337, 93)
         Me.btRegistrarse.TabIndex = 3
         Me.btRegistrarse.Text = "Registrarse "
         Me.btRegistrarse.UseVisualStyleBackColor = True
         '
-        'lbRegistrar
-        '
-        Me.lbRegistrar.AutoSize = True
-        Me.lbRegistrar.Location = New System.Drawing.Point(585, 524)
-        Me.lbRegistrar.Name = "lbRegistrar"
-        Me.lbRegistrar.Size = New System.Drawing.Size(253, 25)
-        Me.lbRegistrar.TabIndex = 4
-        Me.lbRegistrar.Text = "¿Aún no está registrado?"
-        '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(570, 242)
+        Me.txtUsuario.Location = New System.Drawing.Point(196, 82)
+        Me.txtUsuario.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtUsuario.Multiline = True
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(284, 31)
+        Me.txtUsuario.Size = New System.Drawing.Size(225, 31)
         Me.txtUsuario.TabIndex = 5
         '
         'txtContraseña
         '
-        Me.txtContraseña.Location = New System.Drawing.Point(570, 345)
+        Me.txtContraseña.Location = New System.Drawing.Point(251, 165)
+        Me.txtContraseña.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtContraseña.Multiline = True
         Me.txtContraseña.Name = "txtContraseña"
-        Me.txtContraseña.Size = New System.Drawing.Size(284, 31)
+        Me.txtContraseña.Size = New System.Drawing.Size(264, 31)
         Me.txtContraseña.TabIndex = 6
         '
         'lbUsuario
         '
         Me.lbUsuario.AutoSize = True
-        Me.lbUsuario.Location = New System.Drawing.Point(667, 197)
+        Me.lbUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lbUsuario.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbUsuario.ForeColor = System.Drawing.Color.Maroon
+        Me.lbUsuario.Location = New System.Drawing.Point(44, 80)
+        Me.lbUsuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbUsuario.Name = "lbUsuario"
-        Me.lbUsuario.Size = New System.Drawing.Size(86, 25)
+        Me.lbUsuario.Size = New System.Drawing.Size(139, 33)
         Me.lbUsuario.TabIndex = 7
         Me.lbUsuario.Text = "Usuario"
         '
-        'lbContraseña
+        'Label1
         '
-        Me.lbContraseña.AutoSize = True
-        Me.lbContraseña.Location = New System.Drawing.Point(646, 298)
-        Me.lbContraseña.Name = "lbContraseña"
-        Me.lbContraseña.Size = New System.Drawing.Size(123, 25)
-        Me.lbContraseña.TabIndex = 8
-        Me.lbContraseña.Text = "Contraseña"
+        Me.Label1.AutoSize = True
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Maroon
+        Me.Label1.Location = New System.Drawing.Point(44, 163)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(193, 33)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Contraseña"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(190, 246)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(406, 33)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "¿ Aun no se a registrado ? " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Maroon
+        Me.Label3.Location = New System.Drawing.Point(28, 360)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(209, 33)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "Empiece por:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Red
+        Me.Label4.Location = New System.Drawing.Point(270, 9)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(301, 54)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = " Recuerde Iniciar Sesion " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1600, 865)
-        Me.Controls.Add(Me.lbContraseña)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbUsuario)
         Me.Controls.Add(Me.txtContraseña)
         Me.Controls.Add(Me.txtUsuario)
-        Me.Controls.Add(Me.lbRegistrar)
         Me.Controls.Add(Me.btRegistrarse)
         Me.Controls.Add(Me.btIngresar)
-        Me.Margin = New System.Windows.Forms.Padding(6)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -112,9 +165,11 @@ Partial Class Form1
     End Sub
     Friend WithEvents btIngresar As Button
     Friend WithEvents btRegistrarse As Button
-    Friend WithEvents lbRegistrar As Label
     Friend WithEvents txtUsuario As TextBox
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents lbUsuario As Label
-    Friend WithEvents lbContraseña As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
