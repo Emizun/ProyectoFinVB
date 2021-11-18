@@ -36,26 +36,32 @@ Partial Class Form1
         '
         'btIngresar
         '
+        Me.btIngresar.BackColor = System.Drawing.Color.Transparent
+        Me.btIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btIngresar.FlatAppearance.BorderSize = 5
         Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btIngresar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 21.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btIngresar.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.btIngresar.Location = New System.Drawing.Point(534, 93)
+        Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btIngresar.ForeColor = System.Drawing.Color.Black
+        Me.btIngresar.Location = New System.Drawing.Point(537, 100)
         Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(225, 72)
+        Me.btIngresar.Size = New System.Drawing.Size(185, 51)
         Me.btIngresar.TabIndex = 2
         Me.btIngresar.Text = "Ingresar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.btIngresar.UseVisualStyleBackColor = True
+        Me.btIngresar.UseVisualStyleBackColor = False
         '
         'btRegistrarse
         '
+        Me.btRegistrarse.BackColor = System.Drawing.Color.Transparent
+        Me.btRegistrarse.FlatAppearance.BorderSize = 5
+        Me.btRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btRegistrarse.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btRegistrarse.Location = New System.Drawing.Point(259, 330)
+        Me.btRegistrarse.Location = New System.Drawing.Point(251, 351)
         Me.btRegistrarse.Margin = New System.Windows.Forms.Padding(2)
         Me.btRegistrarse.Name = "btRegistrarse"
-        Me.btRegistrarse.Size = New System.Drawing.Size(337, 93)
+        Me.btRegistrarse.Size = New System.Drawing.Size(235, 50)
         Me.btRegistrarse.TabIndex = 3
         Me.btRegistrarse.Text = "Registrarse "
-        Me.btRegistrarse.UseVisualStyleBackColor = True
+        Me.btRegistrarse.UseVisualStyleBackColor = False
         '
         'txtUsuario
         '
@@ -78,9 +84,10 @@ Partial Class Form1
         'lbUsuario
         '
         Me.lbUsuario.AutoSize = True
+        Me.lbUsuario.BackColor = System.Drawing.Color.Transparent
         Me.lbUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lbUsuario.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbUsuario.ForeColor = System.Drawing.Color.Maroon
+        Me.lbUsuario.ForeColor = System.Drawing.SystemColors.Control
         Me.lbUsuario.Location = New System.Drawing.Point(44, 80)
         Me.lbUsuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbUsuario.Name = "lbUsuario"
@@ -91,9 +98,10 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Maroon
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Info
         Me.Label1.Location = New System.Drawing.Point(44, 163)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
@@ -104,10 +112,11 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(190, 246)
+        Me.Label2.ForeColor = System.Drawing.Color.PaleGreen
+        Me.Label2.Location = New System.Drawing.Point(165, 259)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(406, 33)
@@ -117,9 +126,10 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Maroon
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Info
         Me.Label3.Location = New System.Drawing.Point(28, 360)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
@@ -130,9 +140,10 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label4.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Red
+        Me.Label4.ForeColor = System.Drawing.Color.Navy
         Me.Label4.Location = New System.Drawing.Point(270, 9)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
@@ -158,7 +169,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btIngresar)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "MONEY MANAGER"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
