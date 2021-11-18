@@ -74,7 +74,7 @@ Partial Class Form7
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(244, 35)
         Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Eliminar Pagos"
+        Me.Button3.Text = "Eliminar Pago"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
