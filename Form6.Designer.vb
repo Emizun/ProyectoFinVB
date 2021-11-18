@@ -70,6 +70,7 @@ Partial Class Form6
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Aqua
         Me.Label3.Location = New System.Drawing.Point(92, 207)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(90, 13)
@@ -86,6 +87,7 @@ Partial Class Form6
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Aqua
         Me.Label2.Location = New System.Drawing.Point(92, 146)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(90, 13)
@@ -102,6 +104,7 @@ Partial Class Form6
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Aqua
         Me.Label1.Location = New System.Drawing.Point(92, 91)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 13)

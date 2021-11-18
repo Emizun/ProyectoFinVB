@@ -40,9 +40,11 @@ Partial Class Form4
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Aqua
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Location = New System.Drawing.Point(79, 125)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 13)
+        Me.Label1.Size = New System.Drawing.Size(97, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Número de Tarjeta"
         '
@@ -63,6 +65,7 @@ Partial Class Form4
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Aqua
         Me.Label2.Location = New System.Drawing.Point(79, 180)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(91, 13)
@@ -79,6 +82,7 @@ Partial Class Form4
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Aqua
         Me.Label3.Location = New System.Drawing.Point(79, 241)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(79, 13)
@@ -95,6 +99,7 @@ Partial Class Form4
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Aqua
         Me.Label4.Location = New System.Drawing.Point(464, 125)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(28, 13)
@@ -111,6 +116,7 @@ Partial Class Form4
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Aqua
         Me.Label5.Location = New System.Drawing.Point(464, 180)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
