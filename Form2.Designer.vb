@@ -43,58 +43,65 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(29, 86)
+        Me.TextBox1.Location = New System.Drawing.Point(58, 165)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox1.Size = New System.Drawing.Size(606, 56)
         Me.TextBox1.TabIndex = 2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(394, 129)
+        Me.TextBox2.Location = New System.Drawing.Point(788, 248)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox2.Size = New System.Drawing.Size(606, 56)
         Me.TextBox2.TabIndex = 3
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(29, 273)
+        Me.TextBox3.Location = New System.Drawing.Point(58, 525)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox3.Size = New System.Drawing.Size(606, 56)
         Me.TextBox3.TabIndex = 4
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(29, 213)
+        Me.TextBox4.Location = New System.Drawing.Point(58, 410)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox4.Size = New System.Drawing.Size(606, 56)
         Me.TextBox4.TabIndex = 5
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(29, 147)
+        Me.TextBox5.Location = New System.Drawing.Point(58, 283)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox5.Size = New System.Drawing.Size(606, 56)
         Me.TextBox5.TabIndex = 6
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(394, 254)
+        Me.TextBox6.Location = New System.Drawing.Point(788, 488)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox6.Size = New System.Drawing.Size(606, 56)
         Me.TextBox6.TabIndex = 7
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(394, 191)
+        Me.TextBox7.Location = New System.Drawing.Point(788, 367)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(305, 31)
+        Me.TextBox7.Size = New System.Drawing.Size(606, 56)
         Me.TextBox7.TabIndex = 8
         '
         'Label1
@@ -102,9 +109,10 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.MediumBlue
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(26, 70)
+        Me.Label1.Location = New System.Drawing.Point(52, 135)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(87, 25)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Nombre"
         '
@@ -113,9 +121,10 @@ Partial Class Form2
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.MediumBlue
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(26, 129)
+        Me.Label2.Location = New System.Drawing.Point(52, 248)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.Size = New System.Drawing.Size(100, 25)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Apellidos"
         '
@@ -124,9 +133,10 @@ Partial Class Form2
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.MediumBlue
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(26, 191)
+        Me.Label3.Location = New System.Drawing.Point(52, 367)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 13)
+        Me.Label3.Size = New System.Drawing.Size(143, 25)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Numero de ID"
         '
@@ -135,9 +145,10 @@ Partial Class Form2
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.MediumBlue
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(26, 257)
+        Me.Label4.Location = New System.Drawing.Point(52, 494)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 13)
+        Me.Label4.Size = New System.Drawing.Size(65, 25)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Email"
         '
@@ -146,9 +157,10 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.MediumBlue
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(391, 113)
+        Me.Label5.Location = New System.Drawing.Point(782, 217)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(49, 13)
+        Me.Label5.Size = New System.Drawing.Size(96, 25)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Telefono"
         '
@@ -157,9 +169,10 @@ Partial Class Form2
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.MediumBlue
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(391, 175)
+        Me.Label6.Location = New System.Drawing.Point(782, 337)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 13)
+        Me.Label6.Size = New System.Drawing.Size(123, 25)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Contraseña"
         '
@@ -168,9 +181,10 @@ Partial Class Form2
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.MediumBlue
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(391, 238)
+        Me.Label7.Location = New System.Drawing.Point(782, 458)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(108, 13)
+        Me.Label7.Size = New System.Drawing.Size(222, 25)
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Confirmar Contraseña"
         '
@@ -182,9 +196,10 @@ Partial Class Form2
         Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btIngresar.ForeColor = System.Drawing.Color.Black
-        Me.btIngresar.Location = New System.Drawing.Point(82, 327)
+        Me.btIngresar.Location = New System.Drawing.Point(164, 629)
+        Me.btIngresar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(571, 51)
+        Me.btIngresar.Size = New System.Drawing.Size(1142, 98)
         Me.btIngresar.TabIndex = 16
         Me.btIngresar.Text = "Crear Nuevo Usuario"
         Me.btIngresar.UseVisualStyleBackColor = False
@@ -196,21 +211,21 @@ Partial Class Form2
         Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label8.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Navy
-        Me.Label8.Location = New System.Drawing.Point(198, 9)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(396, 17)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(261, 27)
+        Me.Label8.Size = New System.Drawing.Size(500, 52)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = " Registro de Usuario"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(685, 390)
+        Me.ClientSize = New System.Drawing.Size(1370, 750)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.btIngresar)
         Me.Controls.Add(Me.Label7)
@@ -227,6 +242,7 @@ Partial Class Form2
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.ResumeLayout(False)
