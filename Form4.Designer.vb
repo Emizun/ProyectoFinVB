@@ -33,8 +33,8 @@ Partial Class Form4
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.btIngresar = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -123,20 +123,6 @@ Partial Class Form4
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Teléfono"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label6.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Red
-        Me.Label6.Location = New System.Drawing.Point(212, 9)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(255, 27)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = " Registre Su Tarjeta"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'btIngresar
         '
         Me.btIngresar.BackColor = System.Drawing.Color.Transparent
@@ -152,14 +138,29 @@ Partial Class Form4
         Me.btIngresar.Text = "Agregar Tarjeta"
         Me.btIngresar.UseVisualStyleBackColor = False
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label7.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Navy
+        Me.Label7.Location = New System.Drawing.Point(237, 39)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(255, 27)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = " Registre Su Tarjeta"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btIngresar)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox4)
@@ -187,6 +188,6 @@ Partial Class Form4
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents btIngresar As Button
+    Friend WithEvents Label7 As Label
 End Class
