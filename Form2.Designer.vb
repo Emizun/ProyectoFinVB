@@ -196,8 +196,12 @@ Partial Class Form2
         Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btIngresar.ForeColor = System.Drawing.Color.Black
+<<<<<<< HEAD
         Me.btIngresar.Location = New System.Drawing.Point(164, 629)
         Me.btIngresar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+=======
+        Me.btIngresar.Location = New System.Drawing.Point(74, 327)
+>>>>>>> 173d74b80151e5dff2847a0ba1ba9f1ac53c14d2
         Me.btIngresar.Name = "btIngresar"
         Me.btIngresar.Size = New System.Drawing.Size(1142, 98)
         Me.btIngresar.TabIndex = 16
@@ -211,8 +215,13 @@ Partial Class Form2
         Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label8.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Navy
+<<<<<<< HEAD
         Me.Label8.Location = New System.Drawing.Point(396, 17)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+=======
+        Me.Label8.Location = New System.Drawing.Point(191, 9)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+>>>>>>> 173d74b80151e5dff2847a0ba1ba9f1ac53c14d2
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(500, 52)
         Me.Label8.TabIndex = 17

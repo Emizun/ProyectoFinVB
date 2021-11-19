@@ -9,4 +9,7 @@
 
     End Sub
 
+    Private Sub btIngresar_Click(sender As Object, e As EventArgs) Handles btIngresar.Click
+
+    End Sub
 End Class
