@@ -34,7 +34,7 @@ Partial Class Form4
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btIngresar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -137,18 +137,20 @@ Partial Class Form4
         Me.Label6.Text = " Registre Su Tarjeta"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button2
+        'btIngresar
         '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 15.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(394, 257)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(351, 89)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "Añadir Tarjeta"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btIngresar.BackColor = System.Drawing.Color.Transparent
+        Me.btIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btIngresar.FlatAppearance.BorderSize = 5
+        Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btIngresar.ForeColor = System.Drawing.Color.Black
+        Me.btIngresar.Location = New System.Drawing.Point(79, 326)
+        Me.btIngresar.Name = "btIngresar"
+        Me.btIngresar.Size = New System.Drawing.Size(590, 51)
+        Me.btIngresar.TabIndex = 17
+        Me.btIngresar.Text = "Agregar Tarjeta"
+        Me.btIngresar.UseVisualStyleBackColor = False
         '
         'Form4
         '
@@ -156,7 +158,7 @@ Partial Class Form4
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btIngresar)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label5)
@@ -186,5 +188,5 @@ Partial Class Form4
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btIngresar As Button
 End Class
