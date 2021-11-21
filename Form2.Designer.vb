@@ -23,13 +23,13 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txtBoxNombre = New System.Windows.Forms.TextBox()
+        Me.txtBoxTelefono = New System.Windows.Forms.TextBox()
+        Me.txtBoxEmail = New System.Windows.Forms.TextBox()
+        Me.txtBoxNumID = New System.Windows.Forms.TextBox()
+        Me.txtBoxApellidos = New System.Windows.Forms.TextBox()
+        Me.txtBoxConfirContra = New System.Windows.Forms.TextBox()
+        Me.txtBoxContrasena = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -37,72 +37,75 @@ Partial Class Form2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.btIngresar = New System.Windows.Forms.Button()
+        Me.btCrearNewUser = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtBoxNombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(58, 165)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox1.TabIndex = 2
+        Me.txtBoxNombre.Location = New System.Drawing.Point(58, 165)
+        Me.txtBoxNombre.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxNombre.Multiline = True
+        Me.txtBoxNombre.Name = "txtBoxNombre"
+        Me.txtBoxNombre.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxNombre.TabIndex = 2
         '
-        'TextBox2
+        'txtBoxTelefono
         '
-        Me.TextBox2.Location = New System.Drawing.Point(788, 248)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox2.TabIndex = 3
+        Me.txtBoxTelefono.Location = New System.Drawing.Point(788, 248)
+        Me.txtBoxTelefono.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxTelefono.Multiline = True
+        Me.txtBoxTelefono.Name = "txtBoxTelefono"
+        Me.txtBoxTelefono.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxTelefono.TabIndex = 3
         '
-        'TextBox3
+        'txtBoxEmail
         '
-        Me.TextBox3.Location = New System.Drawing.Point(58, 525)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox3.TabIndex = 4
+        Me.txtBoxEmail.Location = New System.Drawing.Point(58, 525)
+        Me.txtBoxEmail.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxEmail.Multiline = True
+        Me.txtBoxEmail.Name = "txtBoxEmail"
+        Me.txtBoxEmail.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxEmail.TabIndex = 4
         '
-        'TextBox4
+        'txtBoxNumID
         '
-        Me.TextBox4.Location = New System.Drawing.Point(58, 410)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox4.TabIndex = 5
+        Me.txtBoxNumID.Location = New System.Drawing.Point(58, 410)
+        Me.txtBoxNumID.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxNumID.Multiline = True
+        Me.txtBoxNumID.Name = "txtBoxNumID"
+        Me.txtBoxNumID.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxNumID.TabIndex = 5
         '
-        'TextBox5
+        'txtBoxApellidos
         '
-        Me.TextBox5.Location = New System.Drawing.Point(58, 283)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox5.TabIndex = 6
+        Me.txtBoxApellidos.Location = New System.Drawing.Point(58, 283)
+        Me.txtBoxApellidos.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxApellidos.Multiline = True
+        Me.txtBoxApellidos.Name = "txtBoxApellidos"
+        Me.txtBoxApellidos.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxApellidos.TabIndex = 6
         '
-        'TextBox6
+        'txtBoxConfirContra
         '
-        Me.TextBox6.Location = New System.Drawing.Point(788, 488)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox6.TabIndex = 7
+        Me.txtBoxConfirContra.Location = New System.Drawing.Point(788, 488)
+        Me.txtBoxConfirContra.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxConfirContra.Multiline = True
+        Me.txtBoxConfirContra.Name = "txtBoxConfirContra"
+        Me.txtBoxConfirContra.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxConfirContra.TabIndex = 7
         '
-        'TextBox7
+        'txtBoxContrasena
         '
-        Me.TextBox7.Location = New System.Drawing.Point(788, 367)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.TextBox7.Multiline = True
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(606, 56)
-        Me.TextBox7.TabIndex = 8
+        Me.txtBoxContrasena.Location = New System.Drawing.Point(788, 367)
+        Me.txtBoxContrasena.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxContrasena.Multiline = True
+        Me.txtBoxContrasena.Name = "txtBoxContrasena"
+        Me.txtBoxContrasena.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxContrasena.TabIndex = 8
         '
         'Label1
         '
@@ -188,25 +191,21 @@ Partial Class Form2
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Confirmar Contraseña"
         '
-        'btIngresar
+        'btCrearNewUser
         '
-        Me.btIngresar.BackColor = System.Drawing.Color.Transparent
-        Me.btIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btIngresar.FlatAppearance.BorderSize = 5
-        Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btIngresar.ForeColor = System.Drawing.Color.Black
-<<<<<<< HEAD
-        Me.btIngresar.Location = New System.Drawing.Point(164, 629)
-        Me.btIngresar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-=======
-        Me.btIngresar.Location = New System.Drawing.Point(74, 327)
->>>>>>> 173d74b80151e5dff2847a0ba1ba9f1ac53c14d2
-        Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(1142, 98)
-        Me.btIngresar.TabIndex = 16
-        Me.btIngresar.Text = "Crear Nuevo Usuario"
-        Me.btIngresar.UseVisualStyleBackColor = False
+        Me.btCrearNewUser.BackColor = System.Drawing.Color.Transparent
+        Me.btCrearNewUser.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btCrearNewUser.FlatAppearance.BorderSize = 5
+        Me.btCrearNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btCrearNewUser.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btCrearNewUser.ForeColor = System.Drawing.Color.Black
+        Me.btCrearNewUser.Location = New System.Drawing.Point(164, 629)
+        Me.btCrearNewUser.Margin = New System.Windows.Forms.Padding(6)
+        Me.btCrearNewUser.Name = "btCrearNewUser"
+        Me.btCrearNewUser.Size = New System.Drawing.Size(1142, 98)
+        Me.btCrearNewUser.TabIndex = 16
+        Me.btCrearNewUser.Text = "Crear Nuevo Usuario"
+        Me.btCrearNewUser.UseVisualStyleBackColor = False
         '
         'Label8
         '
@@ -215,18 +214,32 @@ Partial Class Form2
         Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label8.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Navy
-<<<<<<< HEAD
         Me.Label8.Location = New System.Drawing.Point(396, 17)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-=======
-        Me.Label8.Location = New System.Drawing.Point(191, 9)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
->>>>>>> 173d74b80151e5dff2847a0ba1ba9f1ac53c14d2
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(500, 52)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = " Registro de Usuario"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(52, 92)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(77, 25)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "Label9"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(405, 772)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 82
+        Me.DataGridView1.Size = New System.Drawing.Size(552, 220)
+        Me.DataGridView1.TabIndex = 19
         '
         'Form2
         '
@@ -234,9 +247,10 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1370, 750)
+        Me.ClientSize = New System.Drawing.Size(2062, 1038)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.btIngresar)
+        Me.Controls.Add(Me.btCrearNewUser)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -244,27 +258,29 @@ Partial Class Form2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Controls.Add(Me.txtBoxContrasena)
+        Me.Controls.Add(Me.txtBoxConfirContra)
+        Me.Controls.Add(Me.txtBoxApellidos)
+        Me.Controls.Add(Me.txtBoxNumID)
+        Me.Controls.Add(Me.txtBoxEmail)
+        Me.Controls.Add(Me.txtBoxTelefono)
+        Me.Controls.Add(Me.txtBoxNombre)
+        Me.Controls.Add(Me.Label9)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form2"
         Me.Text = "Form2"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtBoxNombre As TextBox
+    Friend WithEvents txtBoxTelefono As TextBox
+    Friend WithEvents txtBoxEmail As TextBox
+    Friend WithEvents txtBoxNumID As TextBox
+    Friend WithEvents txtBoxApellidos As TextBox
+    Friend WithEvents txtBoxConfirContra As TextBox
+    Friend WithEvents txtBoxContrasena As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -272,6 +288,8 @@ Partial Class Form2
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents btIngresar As Button
+    Friend WithEvents btCrearNewUser As Button
     Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
