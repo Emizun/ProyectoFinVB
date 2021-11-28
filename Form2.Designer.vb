@@ -23,89 +23,80 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.txtBoxNombre = New System.Windows.Forms.TextBox()
-        Me.txtBoxTelefono = New System.Windows.Forms.TextBox()
-        Me.txtBoxEmail = New System.Windows.Forms.TextBox()
-        Me.txtBoxNumID = New System.Windows.Forms.TextBox()
-        Me.txtBoxApellidos = New System.Windows.Forms.TextBox()
-        Me.txtBoxConfirContra = New System.Windows.Forms.TextBox()
-        Me.txtBoxContrasena = New System.Windows.Forms.TextBox()
+        Me.Nombre = New System.Windows.Forms.TextBox()
+        Me.Telefono = New System.Windows.Forms.TextBox()
+        Me.Email = New System.Windows.Forms.TextBox()
+        Me.NumID = New System.Windows.Forms.TextBox()
+        Me.Apellidos = New System.Windows.Forms.TextBox()
+        Me.Contrasena = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.btCrearNewUser = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.txtBoxConfirContra = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'txtBoxNombre
+        'Nombre
         '
-        Me.txtBoxNombre.Location = New System.Drawing.Point(58, 165)
-        Me.txtBoxNombre.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxNombre.Multiline = True
-        Me.txtBoxNombre.Name = "txtBoxNombre"
-        Me.txtBoxNombre.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxNombre.TabIndex = 2
+        Me.Nombre.Location = New System.Drawing.Point(58, 165)
+        Me.Nombre.Margin = New System.Windows.Forms.Padding(6)
+        Me.Nombre.Multiline = True
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.Size = New System.Drawing.Size(606, 56)
+        Me.Nombre.TabIndex = 2
         '
-        'txtBoxTelefono
+        'Telefono
         '
-        Me.txtBoxTelefono.Location = New System.Drawing.Point(788, 248)
-        Me.txtBoxTelefono.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxTelefono.Multiline = True
-        Me.txtBoxTelefono.Name = "txtBoxTelefono"
-        Me.txtBoxTelefono.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxTelefono.TabIndex = 3
+        Me.Telefono.Location = New System.Drawing.Point(788, 248)
+        Me.Telefono.Margin = New System.Windows.Forms.Padding(6)
+        Me.Telefono.Multiline = True
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.Size = New System.Drawing.Size(606, 56)
+        Me.Telefono.TabIndex = 3
         '
-        'txtBoxEmail
+        'Email
         '
-        Me.txtBoxEmail.Location = New System.Drawing.Point(58, 525)
-        Me.txtBoxEmail.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxEmail.Multiline = True
-        Me.txtBoxEmail.Name = "txtBoxEmail"
-        Me.txtBoxEmail.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxEmail.TabIndex = 4
+        Me.Email.Location = New System.Drawing.Point(58, 525)
+        Me.Email.Margin = New System.Windows.Forms.Padding(6)
+        Me.Email.Multiline = True
+        Me.Email.Name = "Email"
+        Me.Email.Size = New System.Drawing.Size(606, 56)
+        Me.Email.TabIndex = 4
         '
-        'txtBoxNumID
+        'NumID
         '
-        Me.txtBoxNumID.Location = New System.Drawing.Point(58, 410)
-        Me.txtBoxNumID.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxNumID.Multiline = True
-        Me.txtBoxNumID.Name = "txtBoxNumID"
-        Me.txtBoxNumID.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxNumID.TabIndex = 5
+        Me.NumID.Location = New System.Drawing.Point(58, 410)
+        Me.NumID.Margin = New System.Windows.Forms.Padding(6)
+        Me.NumID.Multiline = True
+        Me.NumID.Name = "NumID"
+        Me.NumID.Size = New System.Drawing.Size(606, 56)
+        Me.NumID.TabIndex = 5
         '
-        'txtBoxApellidos
+        'Apellidos
         '
-        Me.txtBoxApellidos.Location = New System.Drawing.Point(58, 283)
-        Me.txtBoxApellidos.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxApellidos.Multiline = True
-        Me.txtBoxApellidos.Name = "txtBoxApellidos"
-        Me.txtBoxApellidos.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxApellidos.TabIndex = 6
+        Me.Apellidos.Location = New System.Drawing.Point(58, 283)
+        Me.Apellidos.Margin = New System.Windows.Forms.Padding(6)
+        Me.Apellidos.Multiline = True
+        Me.Apellidos.Name = "Apellidos"
+        Me.Apellidos.Size = New System.Drawing.Size(606, 56)
+        Me.Apellidos.TabIndex = 6
         '
-        'txtBoxConfirContra
+        'Contrasena
         '
-        Me.txtBoxConfirContra.Location = New System.Drawing.Point(788, 488)
-        Me.txtBoxConfirContra.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxConfirContra.Multiline = True
-        Me.txtBoxConfirContra.Name = "txtBoxConfirContra"
-        Me.txtBoxConfirContra.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxConfirContra.TabIndex = 7
-        '
-        'txtBoxContrasena
-        '
-        Me.txtBoxContrasena.Location = New System.Drawing.Point(788, 367)
-        Me.txtBoxContrasena.Margin = New System.Windows.Forms.Padding(6)
-        Me.txtBoxContrasena.Multiline = True
-        Me.txtBoxContrasena.Name = "txtBoxContrasena"
-        Me.txtBoxContrasena.Size = New System.Drawing.Size(606, 56)
-        Me.txtBoxContrasena.TabIndex = 8
+        Me.Contrasena.Location = New System.Drawing.Point(788, 367)
+        Me.Contrasena.Margin = New System.Windows.Forms.Padding(6)
+        Me.Contrasena.Multiline = True
+        Me.Contrasena.Name = "Contrasena"
+        Me.Contrasena.Size = New System.Drawing.Size(606, 56)
+        Me.Contrasena.TabIndex = 8
         '
         'Label1
         '
@@ -179,18 +170,6 @@ Partial Class Form2
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Contraseña"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.MediumBlue
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(782, 458)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(222, 25)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Confirmar Contraseña"
-        '
         'btCrearNewUser
         '
         Me.btCrearNewUser.BackColor = System.Drawing.Color.Transparent
@@ -241,6 +220,27 @@ Partial Class Form2
         Me.DataGridView1.Size = New System.Drawing.Size(552, 220)
         Me.DataGridView1.TabIndex = 19
         '
+        'txtBoxConfirContra
+        '
+        Me.txtBoxConfirContra.Location = New System.Drawing.Point(788, 488)
+        Me.txtBoxConfirContra.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtBoxConfirContra.Multiline = True
+        Me.txtBoxConfirContra.Name = "txtBoxConfirContra"
+        Me.txtBoxConfirContra.Size = New System.Drawing.Size(606, 56)
+        Me.txtBoxConfirContra.TabIndex = 7
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.MediumBlue
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(782, 458)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(222, 25)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Confirmar Contraseña"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -258,13 +258,13 @@ Partial Class Form2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtBoxContrasena)
+        Me.Controls.Add(Me.Contrasena)
         Me.Controls.Add(Me.txtBoxConfirContra)
-        Me.Controls.Add(Me.txtBoxApellidos)
-        Me.Controls.Add(Me.txtBoxNumID)
-        Me.Controls.Add(Me.txtBoxEmail)
-        Me.Controls.Add(Me.txtBoxTelefono)
-        Me.Controls.Add(Me.txtBoxNombre)
+        Me.Controls.Add(Me.Apellidos)
+        Me.Controls.Add(Me.NumID)
+        Me.Controls.Add(Me.Email)
+        Me.Controls.Add(Me.Telefono)
+        Me.Controls.Add(Me.Nombre)
         Me.Controls.Add(Me.Label9)
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form2"
@@ -274,22 +274,22 @@ Partial Class Form2
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtBoxNombre As TextBox
-    Friend WithEvents txtBoxTelefono As TextBox
-    Friend WithEvents txtBoxEmail As TextBox
-    Friend WithEvents txtBoxNumID As TextBox
-    Friend WithEvents txtBoxApellidos As TextBox
-    Friend WithEvents txtBoxConfirContra As TextBox
-    Friend WithEvents txtBoxContrasena As TextBox
+    Friend WithEvents Nombre As TextBox
+    Friend WithEvents Telefono As TextBox
+    Friend WithEvents Email As TextBox
+    Friend WithEvents NumID As TextBox
+    Friend WithEvents Apellidos As TextBox
+    Friend WithEvents Contrasena As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents btCrearNewUser As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents txtBoxConfirContra As TextBox
+    Friend WithEvents Label7 As Label
 End Class

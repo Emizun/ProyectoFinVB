@@ -1,67 +1,45 @@
 ﻿
 
-Imports System.Data
-Imports System.Data.SqlClient
-
 
 Public Class Form2
 
-    Dim stringConnection As String = "Data Source = GABRIELZUMBBC33; initial catalog = ProyectoFinal; Integrated security = True"
-    Dim stringSelect As String = "SELECT * FROM RegistroUS"
+    Dim conexion As Conexion = New Conexion()
+
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Call CargarGrid()
-
+        conexion.Conectar()
+        MostrarDatos()
     End Sub
 
-    Private Sub CargarGrid()
-        Dim da As SqlDataAdapter
-        Dim dt As New DataTable
-
-        Try
-            da = New SqlDataAdapter(stringSelect, stringConnection)
-            da.Fill(dt)
-            Me.DataGridView1.DataSource = dt
-            Label9.Text = String.Format("Total de datos en la tabla{0}", dt.Rows.Count)
-        Catch ex As Exception
-            Label9.Text = "Error:" & ex.Message
-        End Try
-
-
+    Public Sub MostrarDatos()
+        conexion.Consulta("Select * from RegistroUS", "RegistroUS")
+        DataGridView1.DataSource = conexion.ds.Tables("RegistroUS")
     End Sub
 
     Private Sub btCrearNewUser_Click(sender As Object, e As EventArgs) Handles btCrearNewUser.Click
 
-        If txtBoxNombre.Text <> " " And txtBoxApellidos.Text <> " " And txtBoxNumID.Text <> " " And txtBoxEmail.Text <> " " And txtBoxTelefono.Text <> " " And txtBoxContrasena.Text <> " " And txtBoxConfirContra.Text <> " " Then
+        Dim agregar As String = "insert into RegistroUS values ('" + Nombre.Text + "','" + Apellidos.Text + "','" + NumID.Text + "','" _
+                                                                   + Email.Text + "','" + Telefono.Text + "','" + Contrasena.Text + "')"
+        Try
 
-            Dim InsertSql As String
+            If (conexion.Insertar(agregar)) Then
+                MessageBox.Show("El registro se hizo correctamente")
+                MostrarDatos()
+            Else
+                MessageBox.Show("Error al regitrarse")
+
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Intentelo de nuevo")
+
+        End Try
 
 
-            InsertSql = "INSERT INTO RegistroUS (Nombre, Apellidos, NumID, Email, Telefono, Contrasena, ConfirContra) VALUES (@Nombre, @Apellidos, @NumID, @Email, @Telefono, @Contrasena, @ConfirContra)"
 
-            Using con As New SqlConnection(stringConnection)
-
-                Dim cmd As New SqlCommand(InsertSql, con)
-
-                cmd.Parameters.AddWithValue("@Nombre", txtBoxNombre)
-                cmd.Parameters.AddWithValue("@Apellidos", txtBoxApellidos)
-                cmd.Parameters.AddWithValue("@NumID", txtBoxNumID)
-                cmd.Parameters.AddWithValue("@Email", txtBoxEmail)
-                cmd.Parameters.AddWithValue("@Telefono", txtBoxTelefono)
-                cmd.Parameters.AddWithValue("@Contrasena", txtBoxContrasena)
-                cmd.Parameters.AddWithValue("@ConfirContra", txtBoxConfirContra)
-
-                'con.Open()
-                'Dim t As Integer = CInt(cmd.ExecuteScalar())
-                'con.Close()
-
-            End Using
-            Call CargarGrid()
-            MsgBox("Ha creado un usuario satisfactoriamente")
-
-        End If
 
 
     End Sub
+
+
 End Class

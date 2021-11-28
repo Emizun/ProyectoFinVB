@@ -24,17 +24,19 @@ Partial Class Form4
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.NumeroTarjeta = New System.Windows.Forms.TextBox()
+        Me.NombreTarjeta = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TipoTarjeta = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.CVV = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Vencimiento = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btIngresar = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -42,86 +44,96 @@ Partial Class Form4
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Aqua
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Location = New System.Drawing.Point(79, 125)
+        Me.Label1.Location = New System.Drawing.Point(158, 240)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 15)
+        Me.Label1.Size = New System.Drawing.Size(192, 27)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Número de Tarjeta"
         '
-        'TextBox1
+        'NumeroTarjeta
         '
-        Me.TextBox1.Location = New System.Drawing.Point(82, 141)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(202, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.NumeroTarjeta.Location = New System.Drawing.Point(164, 271)
+        Me.NumeroTarjeta.Margin = New System.Windows.Forms.Padding(6)
+        Me.NumeroTarjeta.Name = "NumeroTarjeta"
+        Me.NumeroTarjeta.Size = New System.Drawing.Size(400, 31)
+        Me.NumeroTarjeta.TabIndex = 2
         '
-        'TextBox2
+        'NombreTarjeta
         '
-        Me.TextBox2.Location = New System.Drawing.Point(82, 196)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(202, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.NombreTarjeta.Location = New System.Drawing.Point(164, 377)
+        Me.NombreTarjeta.Margin = New System.Windows.Forms.Padding(6)
+        Me.NombreTarjeta.Name = "NombreTarjeta"
+        Me.NombreTarjeta.Size = New System.Drawing.Size(400, 31)
+        Me.NombreTarjeta.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Aqua
-        Me.Label2.Location = New System.Drawing.Point(79, 180)
+        Me.Label2.Location = New System.Drawing.Point(158, 346)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 13)
+        Me.Label2.Size = New System.Drawing.Size(184, 25)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Nombre Completo"
         '
-        'TextBox3
+        'TipoTarjeta
         '
-        Me.TextBox3.Location = New System.Drawing.Point(82, 257)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(202, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.TipoTarjeta.Location = New System.Drawing.Point(164, 494)
+        Me.TipoTarjeta.Margin = New System.Windows.Forms.Padding(6)
+        Me.TipoTarjeta.Name = "TipoTarjeta"
+        Me.TipoTarjeta.Size = New System.Drawing.Size(400, 31)
+        Me.TipoTarjeta.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Aqua
-        Me.Label3.Location = New System.Drawing.Point(79, 241)
+        Me.Label3.Location = New System.Drawing.Point(158, 463)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 13)
+        Me.Label3.Size = New System.Drawing.Size(157, 25)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Tipo de Tarjeta"
         '
-        'TextBox4
+        'CVV
         '
-        Me.TextBox4.Location = New System.Drawing.Point(467, 141)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(202, 20)
-        Me.TextBox4.TabIndex = 8
+        Me.CVV.Location = New System.Drawing.Point(934, 271)
+        Me.CVV.Margin = New System.Windows.Forms.Padding(6)
+        Me.CVV.Name = "CVV"
+        Me.CVV.Size = New System.Drawing.Size(400, 31)
+        Me.CVV.TabIndex = 8
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Aqua
-        Me.Label4.Location = New System.Drawing.Point(464, 125)
+        Me.Label4.Location = New System.Drawing.Point(928, 240)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(28, 13)
+        Me.Label4.Size = New System.Drawing.Size(55, 25)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "CVV"
         '
-        'TextBox5
+        'Vencimiento
         '
-        Me.TextBox5.Location = New System.Drawing.Point(467, 196)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(202, 20)
-        Me.TextBox5.TabIndex = 10
+        Me.Vencimiento.Location = New System.Drawing.Point(934, 377)
+        Me.Vencimiento.Margin = New System.Windows.Forms.Padding(6)
+        Me.Vencimiento.Name = "Vencimiento"
+        Me.Vencimiento.Size = New System.Drawing.Size(400, 31)
+        Me.Vencimiento.TabIndex = 10
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Aqua
-        Me.Label5.Location = New System.Drawing.Point(464, 180)
+        Me.Label5.Location = New System.Drawing.Point(928, 346)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(49, 13)
+        Me.Label5.Size = New System.Drawing.Size(226, 25)
         Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Teléfono"
+        Me.Label5.Text = "Fecha de Vencimiento"
         '
         'btIngresar
         '
@@ -131,9 +143,10 @@ Partial Class Form4
         Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btIngresar.ForeColor = System.Drawing.Color.Black
-        Me.btIngresar.Location = New System.Drawing.Point(79, 326)
+        Me.btIngresar.Location = New System.Drawing.Point(158, 627)
+        Me.btIngresar.Margin = New System.Windows.Forms.Padding(6)
         Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(590, 51)
+        Me.btIngresar.Size = New System.Drawing.Size(1180, 98)
         Me.btIngresar.TabIndex = 17
         Me.btIngresar.Text = "Agregar Tarjeta"
         Me.btIngresar.UseVisualStyleBackColor = False
@@ -145,49 +158,64 @@ Partial Class Form4
         Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label7.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Navy
-        Me.Label7.Location = New System.Drawing.Point(237, 39)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(474, 75)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(255, 27)
+        Me.Label7.Size = New System.Drawing.Size(488, 52)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = " Registre Su Tarjeta"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'DataGridView2
+        '
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(933, 420)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowHeadersWidth = 82
+        Me.DataGridView2.RowTemplate.Height = 33
+        Me.DataGridView2.Size = New System.Drawing.Size(544, 198)
+        Me.DataGridView2.TabIndex = 19
+        '
         'Form4
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1600, 865)
+        Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btIngresar)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.Vencimiento)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.CVV)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TipoTarjeta)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.NombreTarjeta)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.NumeroTarjeta)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form4"
         Me.Text = "Form4"
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents NumeroTarjeta As TextBox
+    Friend WithEvents NombreTarjeta As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TipoTarjeta As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents CVV As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Vencimiento As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents btIngresar As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents DataGridView2 As DataGridView
 End Class
