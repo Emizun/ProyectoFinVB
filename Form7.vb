@@ -28,4 +28,9 @@
         Button7.Show()
         Button2.Show()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Me.Close()
+        Form3.Show()
+    End Sub
 End Class

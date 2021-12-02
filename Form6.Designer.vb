@@ -31,6 +31,7 @@ Partial Class Form6
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btIngresar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox3
@@ -114,12 +115,28 @@ Partial Class Form6
         Me.Label4.Text = " Registre Sus Datos"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.BorderSize = 5
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(638, 387)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(150, 51)
+        Me.Button6.TabIndex = 24
+        Me.Button6.Text = "Salir"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btIngresar)
         Me.Controls.Add(Me.TextBox3)
@@ -142,4 +159,5 @@ Partial Class Form6
     Friend WithEvents Label1 As Label
     Friend WithEvents btIngresar As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents Button6 As Button
 End Class

@@ -36,6 +36,7 @@ Partial Class Form7
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label4
@@ -205,12 +206,28 @@ Partial Class Form7
         Me.Button4.Text = "Cuentas Por Debitar"
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button8.FlatAppearance.BorderSize = 5
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.White
+        Me.Button8.Location = New System.Drawing.Point(692, 397)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(96, 41)
+        Me.Button8.TabIndex = 35
+        Me.Button8.Text = "Salir"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label2)
@@ -243,4 +260,5 @@ Partial Class Form7
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button8 As Button
 End Class

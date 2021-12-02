@@ -23,7 +23,23 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.BorderSize = 5
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(638, 387)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(150, 51)
+        Me.Button6.TabIndex = 9
+        Me.Button6.Text = "Salir"
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Form5
         '
@@ -31,9 +47,12 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button6)
         Me.Name = "Form5"
         Me.Text = "Form5"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents Button6 As Button
 End Class
