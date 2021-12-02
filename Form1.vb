@@ -39,7 +39,6 @@ Public Class Form1
         End If
 
         If lista <> 0 Then
-            MsgBox("El usuario se hizo correctamente")
             Form3.Show()
         Else
             MsgBox("El usuario no es valido, Intente nuevamente")

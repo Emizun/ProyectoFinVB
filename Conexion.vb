@@ -15,9 +15,9 @@ Public Class Conexion
     Public Sub Conectar()
         Try
             conexion.Open()
-            MessageBox.Show("Conectado")
-        Catch ex As Exception
-            MessageBox.Show("Error al conectar")
+            '  MessageBox.Show("Conectado")
+            ' Catch ex As Exception
+            ' MessageBox.Show("Error al conectar")
         Finally
             conexion.Close()
         End Try
