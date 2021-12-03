@@ -6,7 +6,7 @@ Imports System.Windows.Forms
 
 Public Class Conexion
 
-    Public conexion As SqlConnection = New SqlConnection("Data Source = DESKTOP-FRPTMCQ; initial catalog = ProyectoFinal; Integrated security = True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source = GABRIELZUMBBC33; initial catalog = ProyectoFinal; Integrated security = True")
     Private cmb As SqlCommandBuilder
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
@@ -15,9 +15,9 @@ Public Class Conexion
     Public Sub Conectar()
         Try
             conexion.Open()
-            '  MessageBox.Show("Conectado")
-            ' Catch ex As Exception
-            ' MessageBox.Show("Error al conectar")
+            'MessageBox.Show("Conectado") ESTA INFORMACION SIRVE PARA COMPROBAR QUE LA CONEXION SE HIZO CORRECTAMENTE 
+            'Catch ex As Exception
+            'MessageBox.Show("Error al conectar")
         Finally
             conexion.Close()
         End Try

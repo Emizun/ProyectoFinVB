@@ -13,7 +13,7 @@ Public Class Form2
 
     Public Sub MostrarDatos()
         conexion.Consulta("Select * from RegistroUS", "RegistroUS")
-        DataGridView1.DataSource = conexion.ds.Tables("RegistroUS")
+        'DataGridView1.DataSource = conexion.ds.Tables("RegistroUS") ESTA LINEA SIRVE PARA CUANDO UNO NECESITE VER LA INFO ALMECENADA EN EL GRIDVIEW EN PANTALLA
     End Sub
 
     Private Sub btCrearNewUser_Click(sender As Object, e As EventArgs) Handles btCrearNewUser.Click
@@ -24,7 +24,9 @@ Public Class Form2
 
             If (conexion.Insertar(agregar)) Then
                 MessageBox.Show("El registro se hizo correctamente")
+                Me.Close()
                 MostrarDatos()
+
             Else
                 MessageBox.Show("Error al regitrarse")
 
@@ -37,12 +39,17 @@ Public Class Form2
 
 
 
-
-
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Me.Close()
-        Form1.Show()
+
     End Sub
+
+    Private Sub Salir_Regristro()
+
+
+    End Sub
+
+
 End Class
