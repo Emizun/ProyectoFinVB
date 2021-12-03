@@ -34,7 +34,7 @@
 
     End Sub
 
-    Private Sub btIngresar_Click(sender As Object, e As EventArgs) Handles btIngresar.Click
+    Private Sub btIngresar_Click(sender As Object, e As EventArgs) 
         Form8.Show()
 
     End Sub

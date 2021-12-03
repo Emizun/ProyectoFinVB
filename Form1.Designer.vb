@@ -26,12 +26,12 @@ Partial Class Form1
         Me.btIngresar = New System.Windows.Forms.Button()
         Me.btRegistrarse = New System.Windows.Forms.Button()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
-        Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.lbUsuario = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btIngresar
@@ -71,15 +71,6 @@ Partial Class Form1
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(225, 31)
         Me.txtUsuario.TabIndex = 5
-        '
-        'txtContraseña
-        '
-        Me.txtContraseña.Location = New System.Drawing.Point(251, 165)
-        Me.txtContraseña.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtContraseña.Multiline = True
-        Me.txtContraseña.Name = "txtContraseña"
-        Me.txtContraseña.Size = New System.Drawing.Size(264, 31)
-        Me.txtContraseña.TabIndex = 6
         '
         'lbUsuario
         '
@@ -152,6 +143,16 @@ Partial Class Form1
         Me.Label4.Text = " Recuerde Iniciar Sesion " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'txtContraseña
+        '
+        Me.txtContraseña.Location = New System.Drawing.Point(251, 165)
+        Me.txtContraseña.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtContraseña.Multiline = True
+        Me.txtContraseña.Name = "txtContraseña"
+        Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtContraseña.Size = New System.Drawing.Size(264, 31)
+        Me.txtContraseña.TabIndex = 6
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -177,10 +178,10 @@ Partial Class Form1
     Friend WithEvents btIngresar As Button
     Friend WithEvents btRegistrarse As Button
     Friend WithEvents txtUsuario As TextBox
-    Friend WithEvents txtContraseña As TextBox
     Friend WithEvents lbUsuario As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents txtContraseña As TextBox
 End Class

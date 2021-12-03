@@ -3,21 +3,16 @@
 
 
 
-    Private Sub btIngresar_Click(sender As Object, e As EventArgs) Handles btIngresar.Click
+    Private Sub btIngresar_Click(sender As Object, e As EventArgs)
 
-        TextBox1.Show()
-        Label1.Show()
-        TextBox2.Show()
-        Label2.Show()
+
 
 
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        TextBox1.Hide()
-        Label1.Hide()
-        TextBox2.Hide()
-        Label2.Hide()
+
+
         Button6.Hide()
         Button7.Hide()
         Button2.Hide()
@@ -32,5 +27,25 @@
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Close()
         Form3.Show()
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
     End Sub
 End Class
