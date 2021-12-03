@@ -24,15 +24,10 @@ Partial Class Form7
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form7))
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btIngresar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -53,21 +48,6 @@ Partial Class Form7
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Gestión De Gastos"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'btIngresar
-        '
-        Me.btIngresar.BackColor = System.Drawing.Color.Transparent
-        Me.btIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btIngresar.FlatAppearance.BorderSize = 5
-        Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btIngresar.ForeColor = System.Drawing.Color.Black
-        Me.btIngresar.Location = New System.Drawing.Point(12, 69)
-        Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(337, 52)
-        Me.btIngresar.TabIndex = 23
-        Me.btIngresar.Text = "Consultar Saldos"
-        Me.btIngresar.UseVisualStyleBackColor = False
         '
         'Button1
         '
@@ -107,28 +87,12 @@ Partial Class Form7
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Location = New System.Drawing.Point(64, 397)
+        Me.Button3.Location = New System.Drawing.Point(12, 184)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(590, 51)
+        Me.Button3.Size = New System.Drawing.Size(322, 158)
         Me.Button3.TabIndex = 26
         Me.Button3.Text = "Calcular Cargos Adicionales "
         Me.Button3.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(126, 131)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(194, 20)
-        Me.TextBox1.TabIndex = 28
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 134)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 13)
-        Me.Label1.TabIndex = 29
-        Me.Label1.Text = "Saldo en Colones:"
         '
         'Button5
         '
@@ -144,22 +108,6 @@ Partial Class Form7
         Me.Button5.TabIndex = 30
         Me.Button5.Text = "H"
         Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(27, 166)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 13)
-        Me.Label2.TabIndex = 32
-        Me.Label2.Text = "Saldo en Dolares:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(126, 163)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(194, 20)
-        Me.TextBox2.TabIndex = 31
         '
         'Button6
         '
@@ -199,9 +147,9 @@ Partial Class Form7
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Location = New System.Drawing.Point(182, 340)
+        Me.Button4.Location = New System.Drawing.Point(12, 70)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(376, 51)
+        Me.Button4.Size = New System.Drawing.Size(315, 92)
         Me.Button4.TabIndex = 27
         Me.Button4.Text = "Cuentas Por Debitar"
         Me.Button4.UseVisualStyleBackColor = False
@@ -230,16 +178,11 @@ Partial Class Form7
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btIngresar)
         Me.Controls.Add(Me.Label4)
         Me.Name = "Form7"
         Me.Text = "Form7"
@@ -248,15 +191,10 @@ Partial Class Form7
 
     End Sub
     Friend WithEvents Label4 As Label
-    Friend WithEvents btIngresar As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button4 As Button

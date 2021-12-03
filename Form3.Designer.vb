@@ -27,7 +27,6 @@ Partial Class Form3
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btIngresar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -85,21 +84,6 @@ Partial Class Form3
         Me.Label4.Text = "Menú Principal Money Manager"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btIngresar
-        '
-        Me.btIngresar.BackColor = System.Drawing.Color.Transparent
-        Me.btIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btIngresar.FlatAppearance.BorderSize = 5
-        Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btIngresar.ForeColor = System.Drawing.Color.Black
-        Me.btIngresar.Location = New System.Drawing.Point(12, 55)
-        Me.btIngresar.Name = "btIngresar"
-        Me.btIngresar.Size = New System.Drawing.Size(384, 48)
-        Me.btIngresar.TabIndex = 17
-        Me.btIngresar.Text = "Control De Finanzas"
-        Me.btIngresar.UseVisualStyleBackColor = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
@@ -123,11 +107,11 @@ Partial Class Form3
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Location = New System.Drawing.Point(404, 301)
+        Me.Button3.Location = New System.Drawing.Point(12, 55)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(384, 48)
         Me.Button3.TabIndex = 19
-        Me.Button3.Text = "Pagos en Efectivos"
+        Me.Button3.Text = "Control de Finanzas "
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -140,7 +124,7 @@ Partial Class Form3
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Location = New System.Drawing.Point(12, 301)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(384, 48)
+        Me.Button2.Size = New System.Drawing.Size(769, 48)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = "Registrar Tarjeta"
         Me.Button2.UseVisualStyleBackColor = False
@@ -154,7 +138,6 @@ Partial Class Form3
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btIngresar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.PictureBox2)
@@ -172,7 +155,6 @@ Partial Class Form3
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button6 As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents btIngresar As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
