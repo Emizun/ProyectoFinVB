@@ -25,8 +25,6 @@ Partial Class Form6
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form6))
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btIngresar = New System.Windows.Forms.Button()
@@ -41,7 +39,7 @@ Partial Class Form6
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(28, 201)
+        Me.TextBox3.Location = New System.Drawing.Point(28, 148)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(267, 40)
@@ -51,29 +49,11 @@ Partial Class Form6
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Aqua
-        Me.Label3.Location = New System.Drawing.Point(25, 185)
+        Me.Label3.Location = New System.Drawing.Point(25, 132)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 13)
+        Me.Label3.Size = New System.Drawing.Size(86, 13)
         Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Tipo de Comercio"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(28, 140)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(267, 42)
-        Me.TextBox2.TabIndex = 19
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Aqua
-        Me.Label2.Location = New System.Drawing.Point(25, 124)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 13)
-        Me.Label2.TabIndex = 18
-        Me.Label2.Text = "Nombre del Local"
+        Me.Label3.Text = "Tipo de Negocio"
         '
         'TextBox1
         '
@@ -89,9 +69,9 @@ Partial Class Form6
         Me.Label1.BackColor = System.Drawing.Color.Aqua
         Me.Label1.Location = New System.Drawing.Point(25, 69)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(85, 13)
+        Me.Label1.Size = New System.Drawing.Size(88, 13)
         Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Monto del Gasto"
+        Me.Label1.Text = "Monto del Gasto "
         '
         'btIngresar
         '
@@ -101,7 +81,7 @@ Partial Class Form6
         Me.btIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btIngresar.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btIngresar.ForeColor = System.Drawing.Color.Black
-        Me.btIngresar.Location = New System.Drawing.Point(16, 247)
+        Me.btIngresar.Location = New System.Drawing.Point(16, 204)
         Me.btIngresar.Name = "btIngresar"
         Me.btIngresar.Size = New System.Drawing.Size(279, 64)
         Me.btIngresar.TabIndex = 22
@@ -201,8 +181,6 @@ Partial Class Form6
         Me.Controls.Add(Me.btIngresar)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form6"
@@ -213,8 +191,6 @@ Partial Class Form6
     End Sub
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btIngresar As Button

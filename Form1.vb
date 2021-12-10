@@ -19,7 +19,7 @@ Public Class Form1
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btIngresar.Click
 
-        Dim conexion As SqlConnection = New SqlConnection("Data Source = GABRIELZUMBBC33; initial catalog = ProyectoFinal; Integrated security = True")
+        Dim conexion As SqlConnection = New SqlConnection("Data Source = DESKTOP-FRPTMCQ; initial catalog = ProyectoFinal; Integrated security = True")
 
         usuario = txtUsuario.Text
         contra = txtContraseña.Text
