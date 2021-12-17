@@ -3,9 +3,11 @@ Imports System.Data.SqlClient
 Imports System.Windows.Forms
 
 
+
 Public Class Form9
     Dim Conexion As New SqlConnection
-    Dim comandos As New SqlCommand
+
+
     Private Sub CargarDatos()
         Try
             AbrirConexion()
@@ -52,5 +54,20 @@ Public Class Form9
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Me.Close()
         Form3.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim total As Double = 0
+        Dim fila As DataGridViewRow = New DataGridViewRow()
+
+
+        For Each fila In DataGridView1.Rows
+            total += Convert.ToDouble(fila.Cells("GastoTarjeta").Value)
+        Next
+        TextBox1.Text = Convert.ToString(total * 0.13)
     End Sub
 End Class
