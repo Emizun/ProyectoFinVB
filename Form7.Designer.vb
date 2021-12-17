@@ -26,7 +26,6 @@ Partial Class Form7
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -76,21 +75,6 @@ Partial Class Form7
         Me.Button3.Text = "Calcular Cargos Adicionales "
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button5.FlatAppearance.BorderSize = 5
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Black
-        Me.Button5.Location = New System.Drawing.Point(30, 9)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(38, 52)
-        Me.Button5.TabIndex = 30
-        Me.Button5.Text = "H"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
@@ -128,7 +112,6 @@ Partial Class Form7
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
@@ -142,7 +125,6 @@ Partial Class Form7
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button8 As Button
 End Class

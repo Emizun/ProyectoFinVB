@@ -30,6 +30,7 @@ Partial Class Form3
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -124,10 +125,25 @@ Partial Class Form3
         Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Location = New System.Drawing.Point(12, 301)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(769, 48)
+        Me.Button2.Size = New System.Drawing.Size(371, 56)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = "Registrar Tarjeta"
         Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button4.FlatAppearance.BorderSize = 5
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Black
+        Me.Button4.Location = New System.Drawing.Point(417, 301)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(371, 56)
+        Me.Button4.TabIndex = 21
+        Me.Button4.Text = "Consultar Gastos"
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Form3
         '
@@ -135,6 +151,7 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
@@ -158,4 +175,5 @@ Partial Class Form3
     Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
 End Class

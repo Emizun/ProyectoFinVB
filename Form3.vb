@@ -38,4 +38,8 @@
         Form8.Show()
 
     End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+        Form9.Show()
+    End Sub
 End Class

@@ -48,7 +48,7 @@ Public Class Form5
                 End If
                 CargarDatos()
             Else
-                MsgBox("No hay conexion xon el servidor, no se pudo agregar.")
+                MsgBox("No hay conexion con el servidor, no se pudo agregar.")
             End If
         Catch ex As Exception
             MsgBox("Error," And ex.Message)
@@ -143,5 +143,9 @@ Public Class Form5
         Catch ex As Exception
             MsgBox("Error," And ex.Message)
         End Try
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
     End Sub
 End Class

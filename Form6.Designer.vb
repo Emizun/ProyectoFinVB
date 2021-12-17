@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form6
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form6
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form6))
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -30,11 +30,6 @@ Partial Class Form6
         Me.btIngresar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox3
@@ -118,64 +113,12 @@ Partial Class Form6
         Me.Button6.Text = "Salir"
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(378, 108)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(139, 13)
-        Me.Label5.TabIndex = 37
-        Me.Label5.Text = "Total de Gastos en Dolares:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(525, 106)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(194, 20)
-        Me.TextBox4.TabIndex = 36
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(378, 77)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(141, 13)
-        Me.Label6.TabIndex = 35
-        Me.Label6.Text = "Total de Gastos en Colones:"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(525, 74)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(194, 20)
-        Me.TextBox5.TabIndex = 34
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button1.FlatAppearance.BorderSize = 5
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Showcard Gothic", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(411, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(337, 52)
-        Me.Button1.TabIndex = 33
-        Me.Button1.Text = "Consultar Gastos"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btIngresar)
@@ -196,9 +139,4 @@ Partial Class Form6
     Friend WithEvents btIngresar As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Button6 As Button
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Button1 As Button
 End Class
